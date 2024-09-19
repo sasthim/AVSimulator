@@ -74,11 +74,13 @@ unit_probabilities = {
     'Secret': 0.004
 }
 
-total_gems = 100000
+# User inputs
+total_gems = 100000000
 vip_status = True
 shiny_hunter_status = False
 super_lucky_status = False
 ultra_lucky_status = False
+# ----
 
 summon = Summon(
     unit_probabilities,
@@ -106,7 +108,7 @@ mythic_string = rainbow_text("Mythic")
 print(colored(f"{mythic_string}: ", 'magenta', attrs=["bold"]) + f"{unit_count['Mythic']:,.0f}")
 print(colored("Secret: ", 'red', attrs=["bold", "dark"]) + f"{unit_count['Secret']:,.0f}\n")
 
-print(colored(f"Shiny {mythic_string}: ", 'white', attrs=["bold", "dark"]) + f"{unit_count['Shiny Mythic']:,.0f}")
+print(colored(f"Shiny ", 'white', attrs=["bold", "dark"]) + f"{mythic_string}: " + f"{unit_count['Shiny Mythic']:,.0f}")
 print(colored("Shiny Secret: ", 'white', attrs=["bold", "dark"]) + f"{unit_count['Shiny Secret']:,.0f}")
 print(colored("Shiny units obtained: ", 'white', attrs=["bold", "dark"]) + f"{shiny_count:,.0f}\n")
 
