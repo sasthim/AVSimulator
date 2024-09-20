@@ -5,7 +5,7 @@ if you want to run it and have no programming experience, here's how to do it:
 3. extract and open main.py
 
 if you can't open it by double clicking the file, open a cmd in the app directory and run 'python main.py'
-to open a cmd in the correct directory just right click anywhere inside the correct folder, or open the cmd from windows search and use cd <path to folder>
+to open a cmd in the correct directory just right click anywhere inside the correct folder, or open the cmd from windows search and use 'cd >paste the folder path<'
 
 
 
