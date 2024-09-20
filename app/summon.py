@@ -36,7 +36,7 @@ class Summon:
             shiny_chance *= 2
 
         if unit in ["Mythic", "Secret"]:
-            return f"Shiny {unit}" if random.random() < shiny_chance else unit
+            return f"Shiny {unit}" if random.random() <= shiny_chance else unit
         return unit
 
     def simulate_summons(self, total_gems):
@@ -48,6 +48,7 @@ class Summon:
             unit = self.summon_unit()
             final_unit = self.apply_shiny_chance(unit)
             if "Shiny" in final_unit:
+                results.append(unit)
                 shiny_results += 1
             results.append(final_unit)
 
